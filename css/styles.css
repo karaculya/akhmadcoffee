@@ -927,5 +927,5 @@ body.lock{overflow: hidden;}
   .new-year-package{margin: 10px auto}
   .order-parameters-package-grams{max-width: 300px; margin: 10px auto;}
   .amount-grams{font-size: 0.7rem; padding: 10px 15px;}
-  .delivery-info, .order-total{align-items:center; text-align: center}
+  .delivery-info, .order-total{align-items:center; text-align: center; margin: 0;}
 }
