@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Доставка от AkhmadCoffee</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/sliders.css">
+  <link rel="shortcut icon" href="img/logo-on-white.png" type="image/png">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="logo-box" href="index.html">
+        <img class="logo-image" src="img/logo.png" alt="" />
+      </a>
+      <div id="burger" class="header-burger">
+        <span></span>
+      </div>
+      <nav id="header-nav" class="header-navigation">
+        <li class="header-navigation-item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="header-navigation-item">
+          <a href="menu.html">Меню</a>
+        </li>
+        <li class="header-navigation-item">
+          <a href="delivery.html">Доставка</a>
+        </li>
+        <li class="header-navigation-item">
+          <a href="stocks.html">Акции</a>
+        </li>
+        <li class="header-navigation-item">
+          <a href="contacts.html">Контакты</a>
+        </li>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="welcome-section" style="background:no-repeat linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/delivery.jpg) center; 
+          background-size: cover; background-attachment: fixed;">
+        <h1 class="welcome-text">ДОСТАВКА ПРЯМО В ВАШ ДОМ</h1>
+        <h3 class="enticing-text">зерновой кофе с доставкой в течении 24 часов </h3>
+      </section>
+
+      <section class="benefits-section">
+        <h2 class="target-title">Преимущества</h2>
+        <div class="benefits">
+          <div class="benefits-items-left">
+            <div class="benefits-item">
+              <img class="benefits-item-icon" src="img/quality.png" alt="">
+              <div class="benefits-item-text">
+                <h5 class="litle-text-title">Качество</h5>
+                <p class="description-text">Мы закупаемся только лучшими сортами кофе</p>
+              </div>
+            </div>
+            <div class="benefits-item">
+              <img class="benefits-item-icon" src="img/speed.png" alt="">
+              <div class="benefits-item-text">
+                <h5 class="litle-text-title">Скорость</h5>
+                <p class="description-text">Мы осуществляем курьерскую доставку по всей Самаре
+                  в течении 24 часов после заказа нашей продукции</p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-items-right">
+            <div class="benefits-item">
+              <img class="benefits-item-icon" src="img/trust.png" alt="">
+              <div class="benefits-item-text">
+                <h5 class="litle-text-title">Выгода</h5>
+                <p class="description-text">Наша курьеская доставка становится бесплатной
+                  при заказе от 1000 ₽</p>
+              </div>
+            </div>
+            <div class="benefits-item">
+              <img class="benefits-item-icon" src="img/reuse.png" alt="">
+              <div class="benefits-item-text">
+                <h5 class="litle-text-title">Экологичность</h5>
+                <p class="description-text">В качестве упаковки нашей продукции мы
+                  используем только те материалы, которые подлежат переработке</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="target-title">Оплата и доставка</h2>
+        <div class="delivery">
+          <div class="delivery-levels-up">
+            <div class="delivery-levels">
+              <h5 class="litle-text-title">Вы заказываете</h5>
+              <p class="description-text">Заполняете заявку, выбирите необходимые виды кофе,
+                упаковку и нажмите заказать. Чтобы проверить выбранный товар перед заказом,
+                нажмите на иконку корзины.</p>
+            </div>
+            <div class="delivery-levels">
+              <h5 class="litle-text-title">Мы доставляем</h5>
+              <p class="description-text">Наша доставка осуществляется курьером в течение 24 часов
+                после заказа. Стоимость самой доставки 100 ₽. При заказе от 1000 ₽ доставка бесплатная.</p>
+            </div>
+          </div>
+          <div class="delivery-levels-down">
+            <div class="delivery-levels">
+              <h5 class="litle-text-title">Мы перезваниваем</h5>
+              <p class="description-text">Как только вы сделаете ваш заказ, вам перезвонит наш
+                менеджер, чтобы подтвердить ваш заказ и обговорить подробности, если такие будут.
+              </p>
+            </div>
+            <div class="delivery-levels">
+              <h5 class="litle-text-title">Вы пьёте</h5>
+              <p class="description-text">Вы получаете свой заказ в течение 24 часов.
+                Приятных трапез!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="orders-section">
+        <h2 class="target-title">Заказать кофе</h2>
+        <div class="order-parameters">
+          <div class="order-parameters-coffee">
+            <h5 class="litle-text-title">Выберите кофе</h5>
+            <div class="slider">
+              <div class="slider-element">
+                <img src="img/coffee with caramel.png" alt="" onclick="plusTaste(300)">
+                <div class="slider-element-price">
+                  <h5 class="litle-text-title">Карамель</h5>
+                  <h5 class="litle-text-title">300 ₽</h5>
+                </div>
+                <div class="slider-element-weight">
+                  <p class="description-text">Кофе со вкусом карамели</p>
+                  <p class="description-text">50 гр</p>
+                </div>
+              </div>
+              <div class="slider-element">
+                <img src="img/cofffee with vanilla.png" alt="" onclick="plusTaste(350)">
+                <div class="slider-element-price">
+                  <h5 class="litle-text-title">Ваниль</h5>
+                  <h5 class="litle-text-title">350 ₽</h5>
+                </div>
+                <div class="slider-element-weight">
+                  <p class="description-text">Кофе со вкусом ванили</p>
+                  <p class="description-text">50 гр</p>
+                </div>
+              </div>
+              <div class="slider-element">
+                <img src="img/coffee with chocolate.png" alt="" onclick="plusTaste(370)">
+                <div class="slider-element-price">
+                  <h5 class="litle-text-title">Шоколад</h5>
+                  <h5 class="litle-text-title">370 ₽</h5>
+                </div>
+                <div class="slider-element-weight">
+                  <p class="description-text">Кофе со вкусом шоколада</p>
+                  <p class="description-text">50 гр</p>
+                </div>
+              </div>
+              <a class="slider-btn-prev" onclick="plusSlides(-1)">&#10094</a>
+              <a class="slider-btn-next" onclick="plusSlides(1)">&#10095</a>
+            </div>
+            <h5 class="litle-text-title">Выберите количество грамм</h5>
+            <ul class="order-parameters-package-grams">
+              <li class="amount-grams" id="weight" onclick="plusGrams(50)">50гр</li>
+              <li class="amount-grams" id="weight" onclick="plusGrams(100)">100гр</li>
+              <li class="amount-grams" id="weight" onclick="plusGrams(200)">200гр</li>
+              <li class="amount-grams" id="weight" onclick="plusGrams(500)">500гр</li>
+              <li class="amount-grams" id="weight" onclick="plusGrams(1000)">1000гр</li>
+            </ul>
+          </div>
+          <div class="order-parameters-package">
+            <h5 class="litle-text-title">Выберите упаковку</h5>
+            <div class="slider-package">
+              <div class="slider-package-element">
+                <img id="pack" src="img/package1.png" alt="" onclick="plusPackage(10)">
+              </div>
+              <div class="slider-package-element">
+                <img id="pack" src="img/package2.png" alt="" onclick="plusPackage(10)">
+              </div>
+              <div class="slider-package-element">
+                <img id="pack" src="img/package3.png" alt="" onclick="plusPackage(10)">
+              </div>
+              <div class="slider-package-element">
+                <img id="pack" src="img/package4.png" alt="" onclick="plusPackage(10)">
+              </div>
+              <a class="slider-package-btn-prev" onclick="plusPackageSlides(-1)">&#10094</a>
+              <a class="slider-package-btn-next" onclick="plusPackageSlides(1)">&#10095</a>
+            </div>
+            <div class="new-year-package" onclick="plusPackage(50)">
+              <div class="row">
+                <h5 class="litle-text-title">Новогодняя</h5>
+                <h5 class="litle-text-title">50 ₽</h5>
+              </div>
+              <p class="description-text">Подарочная упаковка</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-total">
+          <h5 class="litle-text-title">Итого:</h5>
+          <h5 id="totalPrice" class="litle-text-title">0</h5>
+          <button class="button" onclick="openInfo()">ЗАКАЗАТЬ</button>
+        </div>
+        <div id="del-description" class="delivery-info" style="display: none;">
+          <p>Спасибо за заказ! Наш менеджер скоро с вами свяжется!</p>
+          <p id="del"></p>
+        </div>
+      </section>
+
+      <div class="footer">
+        <div class="footer-decription">
+          <h3 class="footer-decription-string">© 2021-2022 AkhmadCoffee</h3>
+          <h3 class="footer-decription-string">кофе & вкусяншки</h3>
+          <h3 class="footer-decription-string">Наименование предприятия:</h3>
+          <h3 class="footer-decription-string">ИП Ахмадуллина Карина Ренатовна</h3>
+        </div>
+        <a href="#" class="footer-link">Вверх<img src="img/upIcon.png" alt=""></a>
+      </div>
+  </div>
+  <script src="scripts/sliders.js"></script>
+  <script src="scripts/cost.js"></script>
+  <script src="scripts/burger.js"></script>
+</body>
+
+</html>

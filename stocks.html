@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Акции в AkhmadCoffee</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="shortcut icon" href="img/logo-on-white.png" type="image/png">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="logo-box" href="index.html">
+        <img class="logo-image" src="img/logo.png" alt="" />
+      </a>
+      <div id="burger" class="header-burger">
+        <span></span>
+      </div>
+      <nav id="header-nav" class="header-navigation">
+        <li class="header-navigation-item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="header-navigation-item">
+          <a href="menu.html">Меню</a>
+        </li>
+        <li class="header-navigation-item">
+          <a href="delivery.html">Доставка</a>
+        </li>
+        <li class="header-navigation-item">
+          <a href="stocks.html">Акции</a>
+        </li>
+        <li class="header-navigation-item">
+          <a href="contacts.html">Контакты</a>
+        </li>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="welcome-section"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)), url(img/stocks-header.jpg) center; background-size: cover; background-attachment: fixed;">
+        <h1 class="welcome-text">АКЦИИ</h1>
+        <h2 class="enticing-text">мы хотим быть ближе к вам поэтому</h2>
+      </section>
+
+      <section class="stocks-section-about">
+        <div class="stock-item">
+          <p class="image" style="background-image: url(img/discount-item-2.jpg);"></p>
+          <div class="stock-item-description">
+            <h5>ДЛЯ ДЕСЕРТА ВСЕГДА ЕСТЬ МЕСТО</h5>
+            <h2>КОФЕ + ДЕСЕРТ = СКИДКА 20%</h3>
+            <h6>Действует на все пункты меню</h6>
+          </div>
+        </div>
+        <div class="stock-item">
+          <p class="image" style="background-image: url(img/stock-item-2.jpg);"></p>
+          <div class="stock-item-description">
+            <h5>СКИДКА ЗА ОТМЕТКУ В STORIES</h5>
+            <h2>ОТМЕЧАЕТЕ НАС В ИНСТАГРАМЕ И ПОЛУЧАЕТЕ СКИДКУ 7%</h2>
+            <h6>Действует на все пункты меню</h6>
+          </div>
+        </div>
+      </section>
+
+      <section class="cashback-cost" style="background: url(img/cashback-cost.jpg); background-size: cover;">
+        <h3 class="target-title">Посчитаем кешбэк за маленькие напитки?)</h3>
+        <form class="form">
+          <p class="description-text">Выберите напиток:</p>
+          <select id="cashCoffee" class="form-select">
+            <option value="" selected disabled>Выбрать из списка</option>
+            <option value="129">Американо (129 ₽)</option>
+            <option value="159">Капучинно (159 ₽)</option>
+            <option value="149">Латте (149 ₽)</option>
+            <option value="189">Раф (189 ₽)</option>
+            <option value="159">Флэт-уайт (159 ₽)</option>
+          </select>
+          <p class="description-text">Выберите уровень кешбэка:</p>
+          <select id="cashLevel" class="form-select">
+            <option value="" selected disabled>Выбрать из списка</option>
+            <option value="0.03">START (3%)</option>
+            <option value="0.05">JUNIOR (5%)</option>
+            <option value="0.09">SILVER (9%)</option>
+            <option value="0.12">AMBASSADOR (12%)</option>
+          </select>
+          <button type="button" class="button" id="btnCost">РАССЧИТАТЬ</button>
+        </form>
+        <div id="infoCash" class="final-cash">
+          <p>Кешбек: <span id="cash"></span> ₽</p>
+        </div>
+      </section>
+
+      <section class="discounts-section">
+        <h2 class="target-title">Вы можете получать скидки на все позиции в нашем меню</h2>
+        <div class="discounts-list">
+          <div class="discount-item">
+            <h3 class="image"></h3>
+            <div class="discount-item-description">
+              <h2>При покупке кофе, десерт в подарок</h3>
+                <h6>Действует в течение 3 дней до праздника и 3 дня после</h6>
+            </div>
+          </div>
+          <div class="discount-item">
+            <h3 class="image" style="background-image: url(img/stock-item-1.jpg);"></h3>
+            <div class="discount-item-description">
+              <h2>В подарок к любому завтраку до 12:00</h2>
+              <h6>Американо, чай или фильтр-кофе</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mystery-guest-section">
+        <h2 class="enticing-text" style="background: url(img/mysteryGuest.jfif) bottom; background-size: cover;">
+          ХОТИТЕ СТАТЬ ТАЙНЫМ ГОСТЕМ В AKHMAD COFFEE?</h2>
+        <div class="mystery-guest-box">
+          <h3>Приятно проведёте время в кофейнях и поможете нам стать лучше!)</h3>
+          <form class="form">
+            <button type="button" class="button" id="btnFill">ОТПРАВИТЬ ЗАЯВКУ</button>
+            <div class="questionnaire" id="qst">
+              <p class="questionnaire-answer">Ваше имя:</p>
+              <input type="text" class="questionnaire-field" id="name">
+              <p class="questionnaire-answer">Сколько Вам лет</p>
+              <input type="number" class="questionnaire-field" id="age" min="18">
+              <p class="questionnaire-answer">Ваш номер телефона:</p>
+              <input type="tel" class="questionnaire-field" id="phone" value="+7">
+              <button type="button" class="button" id="btnConfirm">ПОДТВЕРДИТЬ</button>
+            </div>
+          </form>
+          <div id="request" class="final-text">
+            <p>Спасибо за отправленную заявку, <span id="user-name"></span>!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer">
+      <div class="footer-decription">
+        <h3 class="footer-decription-string">© 2021-2022 AkhmadCoffee</h3>
+        <h3 class="footer-decription-string">кофе & вкусяншки</h3>
+        <h3 class="footer-decription-string">Наименование предприятия:</h3>
+        <h3 class="footer-decription-string">ИП Ахмадуллина Карина Ренатовна</h3>
+      </div>
+      <a href="#" class="footer-link">Вверх<img src="img/upIcon.png" alt=""></a>
+    </div>
+  </div>
+  <script src="scripts/burger.js"></script>
+  <script src="scripts/counts.js"></script>
+</body>
+
+</html>
