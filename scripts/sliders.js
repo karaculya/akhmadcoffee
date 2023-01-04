@@ -43,10 +43,3 @@ function showPackageSlides(n) {
 
     packageSlides[packageSlideIndex - 1].style.display = "block";     
 }
-
-// создаю массив из всех слайдов
-// исходя из переданного в функцию индекса удаляю первый или последний элемент массива
-// 1 2 3 4 slides
-// 0 1 2 3 items array => array.lengt = 4
-// <1> 2 3 => 4-1
-// <2> 3 4 =>  
