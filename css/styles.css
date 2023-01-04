@@ -774,7 +774,7 @@ body.lock{overflow: hidden;}
     float: left;
 }
 
-.benefits-item-text{max-width: 300px;}
+.benefits-item-text{max-width: 300px; max-height: 150px;}
 .benefits-item .litle-text-title,
 .benefits-item .description-text,
 .delivery .litle-text-title,
@@ -909,28 +909,23 @@ body.lock{overflow: hidden;}
   .benefits,
   .delivery-levels-up,
   .delivery-levels-down,
-  .order-parameters {
-    flex-direction: column;
-}
-  .order-parameters{
-    align-items: center;
-    gap: 20px;}
+  .order-parameters,
+  .order-total {flex-direction: column;}  
+  .order-parameters{ align-items: center; gap: 20px;}
   .delivery-levels-up,
-  .delivery-levels-down {
-    gap: 10px;
+  .delivery-levels-down {gap: 10px;}
+  .delivery-levels-down {margin-left: 0;}
+  .order-parameters-package .litle-text-title{text-align: center;}
+  .order-total{margin-top: 7px;}
 }
-.delivery-levels-down {
-  margin-left: 0;
-}
-.order-parameters-package .litle-text-title{
-  text-align: center;
-}
+@media screen and (max-width: 486px) {
+  .benefits-item{gap: 1px;}
+  .benefits-item .litle-text-title, .benefits-item .description-text{margin: 0;}
 }
 @media screen and (max-width: 451px) {
-.row{width: 280px; }
-.new-year-package{margin: 10px auto}
-.order-parameters-package-grams{max-width: 300px; margin: 10px auto;}
-.amount-grams{font-size: 0.7rem; padding: 10px 15px;}
-.order-total{flex-direction: column;}
-.delivery-info, .order-total{align-items:center; margin: 0}
+  .row{width: 280px; }
+  .new-year-package{margin: 10px auto}
+  .order-parameters-package-grams{max-width: 300px; margin: 10px auto;}
+  .amount-grams{font-size: 0.7rem; padding: 10px 15px;}
+  .delivery-info, .order-total{align-items:center; text-align: center}
 }
